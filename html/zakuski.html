@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Рецепти, Съвети, Закуски, Готвене, печете">
+    <meta name="description" content="Recipies for breakfast, main course and dessert">
+    <meta name="author" content="Diana, Teodora, Borislav">
+    <meta http-equiv="refresh" content="300">
+    <title>Закуски</title>
+    <link rel="icon" href="../public/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="../css/zakuski.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-section">
+            <a href="../html/index.html" class="logo-link">
+                <img src="../public/logomokechka.svg" alt="Mekichka Logo" class="logo">
+                <span class="site-title">Готварски рецепти</span>
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="../html/index.html">Начало</a>
+            <div class="dropdown">
+                <a href="../html/recepti.html">Рецепти</a>
+                <div class="dropdown-content">
+                    <a href="../html/zakuski.html">Закуски</a>
+                    <a href="../html/osnovni.html">Основни</a>
+                    <a href="../html/deserti.html">Десерти</a>
+                </div>
+            </div>
+            <a href="../html/syveti.html">Съвети</a>
+            <a href="../html/kontakti.html">Контакти</a>
+            <a href="../html/zamekichka.html">За нас</a>
+        </div>
+    </div>
+
+<h1>  Рецепти за закуски </h1>           
+<div class="grid-container">
+    <a href="../html/grilsandvich.html" class="grid-item">
+        <div class="card">
+            <img src="../public/sandvich.jpg" alt="Грил сандвич">
+            <h3>Грил сандвич</h3>
+            <p>Грил сандвич със сирене</p>
+        </div>
+    </a>
+    <a href="../html/pyrjenifiliiki.html" class="grid-item">
+        <div class="card">
+            <img src="../public/filiiki.jpg" alt="Канелени пържени филийки">
+            <h3>Пържени филийки</h3>
+            <p>Бързи и вкусни филийки</p>
+        </div>
+    </a>
+    <a href="../html/gofreti.html" class="grid-item">
+        <div class="card">
+            <img src="../public/gofreti.jpg" alt="Гофрети">
+            <h3>Гофрети</h3>
+            <p>Класическа рецепта за гофрети</p>
+        </div>
+    </a>
+    <a href="../html/mlechnabanica.html" class="grid-item">
+        <div class="card">
+            <img src="../public/banica.jpg" alt="Млечна баница">
+            <h3>Млечна баница</h3>
+            <p>Пухкава като на баба</p>
+        </div>
+    </a>
+    <a href="../html/pirojki.html" class="grid-item">
+        <div class="card">
+            <img src="../public/pirojki.jpg" alt="Пирожки">
+            <h3>Пирожки</h3>
+            <p>Лесни рецепти за пирожки</p>
+        </div>
+    </a>
+    <a href="../html/palachinki.html" class="grid-item">
+        <div class="card">
+            <img src="../public/palachinki.jpg" alt="Здравословни палачинки">
+            <h3>Палачинки</h3>
+            <p>С овесени ядки и боровинки</p>
+        </div>
+    </a>
+     </a>
+    <a href="../html/krekeri.html" class="grid-item">
+        <div class="card">
+            <img src="../public/krekeri.jpg" alt="Крекери">
+            <h3>Крекери</h3>
+            <p>Бърза кето рецепта</p>
+        </div>
+    </a>
+    <a href="../html/mekici.html" class="grid-item">
+        <div class="card">
+            <img src="../public/mekici.jpg" alt="Мекици">
+            <h3>Мекици</h3>
+            <p>Страхотно пухкави</p>
+        </div>
+</div>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo-section">
+            <a href="../html/index.html" class="footer-logo-link">
+                <img src="../public/logomokechka.svg" alt="Mekichka Logo" class="footer-logo">
+                <span class="footer-site-title">Готварски рецепти</span>
+            </a>
+        </div>
+        <div class="footer-links">
+            <h3>Полезни връзки</h3>
+            <div class="footer-links">
+                <a href="../html/index.html">Начало</a>
+                <a href="../html/recepti.html">Рецепти</a>
+                <a href="../html/syveti.html">Съвети</a>
+                <a href="../html/kontakti.html">Контакти</a>
+                <a href="../html/zamekichka.html">За нас</a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <h3>Контакти</h3>
+            <p>Имейл: <a href="mailto:help@mekichka.bg">help@mekichka.bg</a></p>
+            <p>Телефон: <a href="tel:+359877506023">+359 877 506 023</a></p>
+            <p>Инстаграм: <a href="https://www.instagram.com/high.heels.baking" target="_blank">@mekichka.bg</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Mekichka.bg. Всички права запазени.</p>
+    </div>
+</footer>
+<script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+</html>
+

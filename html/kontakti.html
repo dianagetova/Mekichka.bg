@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Рецепти, Контакти, Свържете, нас, въпроси">
+    <meta name="description" content="Recipies for breakfast, main course and dessert">
+    <meta name="author" content="Diana, Teodora, Borislav">
+    <meta http-equiv="refresh" content="300">
+    <title>Контакти</title>
+    <link rel="icon" href="../public/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/kontakti.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-section">
+            <a href="../html/index.html" class="logo-link">
+                <img src="../public/logomokechka.svg" alt="Mekichka Logo" class="logo">
+                <span class="site-title">Готварски рецепти</span>
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="../html/index.html">Начало</a>
+            <div class="dropdown">
+                <a href="../html/recepti.html">Рецепти</a>
+                <div class="dropdown-content">
+                    <a href="../html/zakuski.html">Закуски</a>
+                    <a href="../html/osnovni.html">Основни</a>
+                    <a href="../html/deserti.html">Десерти</a>
+                </div>
+            </div>
+            <a href="../html/syveti.html">Съвети</a>
+            <a href="../html/kontakti.html">Контакти</a>
+            <a href="../html/zamekichka.html">За нас</a>
+        </div>
+    </div>
+    <main class="contact-container">
+        <h1>Контакти</h1>
+        <p class="paragraf">Ако имате въпроси или нужда от помощ за някоя рецепта, не се колебайте да се свържете с нас. Ще се радваме да Ви помогнем!</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Телефон</h3>
+                <p class="paragraf">+359877506023</p>
+            </div>
+            <div class="contact-item">
+                <h3>Имейл</h3>
+                <p class="paragraf"><a class="paragraf" href="mailto:help@recepti.bg">help@mekichka.bg</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Инстаграм</h3>
+                <p class="paragraf"><a class="paragraf" href="https://www.instagram.com/high.heels.baking" target="_blank">@mekichka.bg</a></p>
+            </div>
+        </div>
+
+        <section class="contact-form-section">
+            <h2>Свържете се с нас!</h2>
+            <form action="/submit-form" method="POST" class="contact-form">
+                <label for="name">Име</label>
+                <input type="text" class="contact-form-input" name="name" placeholder="Вашето име" required>
+
+                <label for="email">Имейл</label>
+                <input type="email" class="contact-form-input" name="email" placeholder="Вашият имейл адрес" required>
+
+                <label for="message">Съобщение</label>
+                <textarea class="contact-form-input" name="message" placeholder="Вашето съобщение" rows="4" required></textarea>
+
+                <button type="submit" class="submit-btn">Изпрати</button>
+            </form>
+            <div class="confirmation-message" style="display: none;">
+                Вашата форма е изпратена! Ще се свържем с Вас при първа възможност!
+            </div>
+            <script>
+                document.querySelector('.contact-form').addEventListener('submit', function (e) {
+                    e.preventDefault(); 
+                    const confirmationMessage = document.querySelector('.confirmation-message');
+                    confirmationMessage.style.display = 'block';
+                    setTimeout(() => {
+                        confirmationMessage.style.display = 'none'; 
+                    }, 5000);
+                    e.target.reset();   
+                });
+            </script>
+        </section>
+    </main>
+
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo-section">
+            <a href="../html/index.html" class="footer-logo-link">
+                <img src="../public/logomokechka.svg" alt="Mekichka Logo" class="footer-logo">
+                <span class="footer-site-title">Готварски рецепти</span>
+            </a>
+        </div>
+        <div class="footer-links">
+            <h3>Полезни връзки</h3>
+            <div class="footer-links">
+                <a href="../html/index.html">Начало</a>
+                <a href="../html/recepti.html">Рецепти</a>
+                <a href="../html/syveti.html">Съвети</a>
+                <a href="../html/kontakti.html">Контакти</a>
+                <a href="../html/zamekichka.html">За нас</a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <h3>Контакти</h3>
+            <p class="kontaktifooterp">Имейл: <a href="mailto:help@mekichka.bg">help@mekichka.bg</a></p>
+            <p class="kontaktifooterp">Телефон: <a href="tel:+359877506023">+359 877 506 023</a></p>
+            <p class="kontaktifooterp">Инстаграм: <a href="https://www.instagram.com/high.heels.baking" target="_blank">@mekichka.bg</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Mekichka.bg. Всички права запазени.</p>
+    </div>
+</footer>
+<script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+</html>

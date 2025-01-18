@@ -1,0 +1,155 @@
+.footer {
+    background-color: #ff7043;
+    color: #fff;
+    padding: 0px 20px 10px 13px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-section .footer-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.footer-logo-link{
+    margin-bottom: 60px;
+    margin-top: 0px;
+}
+
+.footer-logo-section .footer-logo-link .footer-logo {
+    height: 50px;
+}
+
+.footer-logo-section .footer-logo-link .footer-site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    padding: 0px;
+}
+
+.footer-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-section .footer-site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+
+.footer h3 {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.polezni {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 0 15px 0px;
+}
+
+.footer-links {
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+}
+
+.footer-links .links {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0px;
+}
+
+.footer-links .links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links .links a:hover {
+    color: #ffd5c8;
+}
+
+.footer-contact {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo-section {
+        justify-content: center;
+    }
+
+    .footer-links .links {
+        gap: 10px;
+    }
+
+    .footer-contact p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer h3 {
+        font-size: 1rem;
+    }
+
+    .footer-logo-section .footer-logo-link .footer-site-title {
+        font-size: 1.2em;
+    }
+
+    .footer-links .links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer-contact p {
+        font-size: 0.8rem;
+    }
+}
+
+a { 
+    color: white ;
+    text-decoration: none;
+}
